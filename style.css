@@ -9,7 +9,6 @@ body {
     border: 1px solid teal;
     box-sizing: border-box;
     color: white;
-    
   }
   .countdowntimer-seconds{
     color: white;
@@ -30,6 +29,12 @@ body {
     flex-grow: 1 ;
     margin: .5em;
     max-height: 10vh;
+  }
+
+  footer{
+    max-width: 25em;
+    text-align: center;
+    color: yellow;
   }
 
   main  {
