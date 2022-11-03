@@ -1,5 +1,5 @@
 const timeH = document.getElementById("countdown")
-let timeSecond = 10;
+let timeSecond = 30;
 
 displayTime(timeSecond)
 

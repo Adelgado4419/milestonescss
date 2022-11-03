@@ -9,6 +9,9 @@ body {
     border: 1px solid teal;
     box-sizing: border-box;
     color: white;
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: #feda4a;
+    
   }
   .countdowntimer-seconds{
     color: white;
@@ -31,10 +34,18 @@ body {
     max-height: 10vh;
   }
 
-  footer{
+  footer, h2{
     max-width: 25em;
+
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    text-align: justify;
+    
+
+  }
+  h2 {
     text-align: center;
-    color: yellow;
   }
 
   main  {
@@ -72,7 +83,9 @@ body {
     padding-left: 5%;
 
 }
-
+br {
+  lett
+}
   
   @media (min-width: 600px) {
     .container {
