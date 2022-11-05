@@ -28,11 +28,11 @@ function endTime(){
 
 
 //delete lightsaber 
+const lightSaberImg1 = document.getElementById("health1")
 
-
-if(document.getElementById("question5").value == "assistant5") {
-    
-}
-
+function myFunction() {
+    var x = document.getElementById("myCheck").checked;
+    document.getElementById("demo").innerHTML = x;
+  }
 
 //for html form, https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_radio
