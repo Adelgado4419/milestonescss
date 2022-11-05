@@ -6,8 +6,8 @@ body {
   }
   
   * {
-    border: 1px solid teal;
-    box-sizing: border-box;
+    /* border: 1px solid teal;
+    box-sizing: border-box; */
     color: white;
     font-family: 'Pathway Gothic One', sans-serif;
     color: #feda4a;

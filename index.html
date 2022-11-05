@@ -34,8 +34,7 @@
             <div class="health">
                 <h2>Health</h2>
                 <img class="healthimg" id="health1" src="./assets/lightsaber.png">
-                <img class="healthimg" id="health2" src="./assets/lightsaber.png">
-                <img class="healthimg" id="health3" src="./assets/lightsaber.png">
+
 
 
     </div>
@@ -43,122 +42,79 @@
              <h2 class="questions">Questions</h2>
 
                 <form id="questionformform">
-                    <div id="question1">
-                        <label>Who had the highest midi-chlorian count in Star Wars?</label><br>
-                        <input type="radio" id="obiWan1" value="obiWan1" name="question1">
-                        <label for="obiWan1">Obi-Wan Kenobi</label>
-                        <br>
-                        <input type="radio" id="anakin1" value="anakin1" name="question1">
-                        <label for="anakin1">Anakin Skywalker</label>
-                        <br>
-                        <input type="radio" id="yoda1" value="yoda1" name="question1">
-                        <label for="yoda1">Yoda</label>
-                    </div><br><br>
+                    <fieldset>
+                    <legend>Trivia Questions</legend>
+                    <section id="question1">
+                        <p>Who had the highest midi-chlorian count in Star Wars?</p>
+                        <label><input type="radio" value="A" name="question1"> Obi-Wan Kenobi</label><br>
+                        <label><input type="radio" value="B" name="question1">Anakin Skywalker</label><br>
+                        <label><input type="radio" value="C" name="question1">Yoda</label>
+                        <span id="flag0"></span>
+                    </section><br><br>
             
-                    <div id="question2">
-                        <label>What's the name of Boba Fett's ship?</label><br>
-                        <input type="radio" id="deathStar2" value="deathStar2" name="question2">
-                        <label for="deathStar2">The Death Star</label>
-                        <br>
-                        <input type="radio" id="millenniumFalcon2" value="millenniumFalcon2" name="question2">
-                        <label for="millenniumFalcon2">Millennium Falcon</label>
-                        <br>
-                        <input type="radio" id="slave12" value="slave12" name="question2">
-                        <label for="slave12">Slave 1</label>
-                    </div><br><br>
+                    <section id="question2">
+                        <p>What's the name of Boba Fett's ship?</p>
+                        <label><input type="radio" value="A" name="question2">The Death Star</label><br>
+                        <label><input type="radio" value="B" name="question2">Millennium Falcon</label><br>
+                        <label><input type="radio" value="C" name="question2">Slave 1</label>
+                    </section><br><br>
                 
 
-                    <div id="question3">
-                        <label>Who killed Qui-Gon Jinn?</label><br>
-                        <input type="radio" id="darthMaul3" value="darthMaul3" name="question3">
-                        <label for="darthMaul3">Darth Maul</label>
-                        <br>
-                        <input type="radio" id="r2d23" value="r2d23" name="question3">
-                        <label for="r2d23">R2D2</label>
-                        <br>
-                        <input type="radio" id="obiWan3" value="obiWan3" name="question3">
-                        <label for="obiWan3">Obi-Wan Kenobi</label>
-                    </div><br><br>
+                    <section id="question3">
+                        <p>Who killed Qui-Gon Jinn?</p>
+                        <label><input type="radio" value="A" name="question3">Darth Maul</label><br>
+                        <label><input type="radio" value="B" name="question3">R2D2</label><br>
+                        <label><input type="radio" value="C" name="question3">Obi-Wan Kenobi</label><br>
+                    </section><br><br>
                 
                 
-                    <div id="question4">
-                        <label>According to Yoda, there are always how many Sith Lords...no more, no less?</label><br>
-                        <input type="radio" id="one4" value="one4" name="question1">
-                        <label for="one4">One (Rule of One)</label>
-                        <br>
-                        <input type="radio" id="none4" value="none4" name="question1">
-                        <label for="none4">None (There are no Sith lords)</label>
-                        <br>
-                        <input type="radio" id="two4" value="two4" name="question1">
-                        <label for="two4">Two (Rule of two)</label>
-                    </div><br><br>
+                    <section id="question4">
+                        <p>According to Yoda, there are always how many Sith Lords...no more, no less?</p>
+                        <label><input type="radio" value="A" name="question1">One (Rule of One)</label><br>
+                        <label><input type="radio" value="B" name="question1">None (There are no Sith lords)</label><br>
+                        <label><input type="radio" value="C" name="question1">Two (Rule of two)</label><br>
+                    </section><br><br>
                 
 
-                    <div id="question5">
-                        <label>Who acted as Queen Amidala's decoy?</label><br>
-                        <input type="radio" class ="wrong answer" id="assistant5" value="assistant5" name="question1">
-                        <label for="assistant5">Her assistant, Sabé</label>
-                        <br>
-                        <input type="radio" id="caretaker5" value="caretaker5" name="question1">
-                        <label for="caretaker5">Her caretaker, Sabé</label>
-                        <br>
-                        <input type="radio" id="handmaiden5" value="handmaiden5" name="question1">
-                        <label for="handmaiden5">Her handmaiden, Sabé</label>
-                    </div><br><br>
+                    <section id="question5">
+                        <p>Who acted as Queen Amidala's decoy?</p>
+                        <label><input type="radio" value="A" name="question1">Her assistant, Sabé</label><br>
+                        <label><input type="radio" value="B" name="question1">Her caretaker, Sabé</label><br>
+                        <label><input type="radio" value="C" name="question1"></label>Her handmaiden, Sabé<br>
+                    </section><br><br>
                 
 
-                    <div id="question6">
-                        <label>Where was Yoda's home in his final years?</label><br>
-                        <input type="radio" id="mustafar6" value="mustafar6" name="question1">
-                        <label for="mustafar6">Mustafar</label>
-                        <br>
-                        <input type="radio" id="dagobah6" value="dagobah6" name="question1">
-                        <label for="dagobah6">Dagobag</label>
-                        <br>
-                        <input type="radio" id="dantooine6" value="dantooine6" name="question1">
-                        <label for="dantooine6">Dantooine</label>
-                    </div><br><br>
+                    <section id="question6">
+                        <p>Where was Yoda's home in his final years?</p>
+                        <label><input type="radio" value="A" name="question1">Mustafar</label><br>
+                        <label><input type="radio" value="B" name="question1">Dagobag</label><br>
+                        <label><input type="radio" value="C" name="question1">Dantooine</label><br>
+                    </section><br><br>
                 
 
-                    <div id="question7">
-                        <label>What was Finn's stormtrooper number?</label><br>
-                        <input type="radio" id="fn21877" value="fn21877" name="question1">
-                        <label for="fn21877">FN-2187</label>
-                        <br>
-                        <input type="radio" id="fin7" value="fin7" name="question1">
-                        <label for="fin7">FINr</label>
-                        <br>
-                        <input type="radio" id="fn2181" value="fn2181" name="question1">
-                        <label for="fn2181">FN-2181</label>
-                    </div><br><br>
+                    <section id="question7">
+                        <p>What was Finn's stormtrooper number?</p>
+                        <label><input type="radio" value="A" name="question1">FN-2187</label><br>
+                        <label><input type="radio" value="B" name="question1">FIN</label><br>
+                        <label><input type="radio" value="C" name="question1">FN-2181</label><br>
+                    </section><br><br>
                 
 
-                    <div id="question8">
-                        <label>Finish the quote: "This is ____"</label><br>
-                        <input type="radio" id="theBegining8" value="theBegining8" name="question1">
-                        <label for="theBegining8">the begining</label>
-                        <br>
-                        <input type="radio" id="fun8" value="fun8" name="question1">
-                        <label for="fun8">Fun</label>
-                        <br>
-                        <input type="radio" id="theWay8" value="theWay8" name="question1">
-                        <label for="theWay8">the way</label>
-                    </div><br><br>
+                    <section id="question8">
+                        <p>Finish the quote: "This is ____"</p>
+                        <label><input type="radio" value="A" name="question1">the begining</label><br>
+                        <label><input type="radio" value="B" name="question1"></label>Fun<br>
+                        <label><input type="radio" value="C" name="question1">the way</label><br>
+                    </section><br><br>
 
 
-                    <div id="question9">
-                        <label>What is Kyle Ren's birth name?</label><br>
-                        <input type="radio" id="benKylo9" value="benKylo9" name="question1">
-                        <label for="benKylo9">Ben Kylo</label>
-                        <br>
-                        <input type="radio" id="kyloRen9" value="kyloRen9" name="question1">
-                        <label for="kyloRen9">Kylo Ren</label>
-                        <br>
-                        <input type="radio" id="benSolo9" value="benSolo9" name="question1">
-                        <label for="benSolo9">Ben Solo</label>
-                    </div><br><br>
+                    <section id="question9">
+                        <p>What is Kyle Ren's birth name?</p>
+                        <label><input type="radio" value="A" name="question1">Ben Kylo</label><br>
+                        <label><input type="radio" value="B" name="question1">Kylo Ren</label><br>
+                        <label><input type="radio" value="C" name="question1">Ben Solo</label><br>                    </section><br><br>
                     <button id="submit">Submit!</button>
-                    
+                </fieldset>
                 </form>
                 <div id="results"></div>
             </div>
@@ -179,8 +135,9 @@
     </div>
 
 
-    <script src="/index.js"></script>
+    
 </body>
+<script src="/index.js"></script>
 </html>
 
 
