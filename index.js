@@ -35,15 +35,13 @@ const lightSaberImg1 = document.getElementById("health1")
 // }
 
 //online test code
+
 var answers = ["A", "C"],
   total = answers.length;
 
 
-function getAnswer(QuestionId) 
-{
-  
+function getAnswer(QuestionId) {
   var answer = document.querySelector("#" + QuestionId + " input[type=radio]:checked");
-
   if (answer === null) 
   {
     document.querySelector("#" + QuestionId + " .choice_error").style.display = "inline";
