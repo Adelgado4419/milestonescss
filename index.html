@@ -10,38 +10,169 @@
 </head>
 
 <body>
+    <audio controls >
+        <source src="/assets/themesongfull5min.mp3" type="audio/mpeg" play>
+
+    </audio>
     <div class="container">
         <header>
             <div class="logo">
                 <img id="logoImg"src="/assets/Logo.jpeg">
             </div>
-            <div id="countdown">
-                
-            </div>
+            <!-- <div id="countdown"></div>
             <div class="countdowntimer-seconds">
                 <h2>Seconds Remaining!!</h2>
+            </div> -->
+            <div id="timerbox">
+                <p id="countdown"></p>
+                <h3>Seconds Remaining!!</h3>
             </div>
+
         </header>
     <div class="wrapper">
 
             <div class="health">
                 <h2>Health</h2>
+                <img class="healthimg" id="health1" src="./assets/lightsaber.png">
+                <img class="healthimg" id="health2" src="./assets/lightsaber.png">
+                <img class="healthimg" id="health3" src="./assets/lightsaber.png">
 
 
     </div>
-            <main>
-                <div class="questions">Questions</div>
-                
-            </main>
+    <div classid="questionform">
+             <h2 class="questions">Questions</h2>
 
+                <form id="questionformform">
+                    <div id="question1">
+                        <label>Who had the highest midi-chlorian count in Star Wars?</label><br>
+                        <input type="radio" id="obiWan1" value="obiWan1" name="question1">
+                        <label for="obiWan1">Obi-Wan Kenobi</label>
+                        <br>
+                        <input type="radio" id="anakin1" value="anakin1" name="question1">
+                        <label for="anakin1">Anakin Skywalker</label>
+                        <br>
+                        <input type="radio" id="yoda1" value="yoda1" name="question1">
+                        <label for="yoda1">Yoda</label>
+                    </div><br><br>
+            
+                    <div id="question2">
+                        <label>What's the name of Boba Fett's ship?</label><br>
+                        <input type="radio" id="deathStar2" value="deathStar2" name="question2">
+                        <label for="deathStar2">The Death Star</label>
+                        <br>
+                        <input type="radio" id="millenniumFalcon2" value="millenniumFalcon2" name="question2">
+                        <label for="millenniumFalcon2">Millennium Falcon</label>
+                        <br>
+                        <input type="radio" id="slave12" value="slave12" name="question2">
+                        <label for="slave12">Slave 1</label>
+                    </div><br><br>
+                
+
+                    <div id="question3">
+                        <label>Who killed Qui-Gon Jinn?</label><br>
+                        <input type="radio" id="darthMaul3" value="darthMaul3" name="question3">
+                        <label for="darthMaul3">Darth Maul</label>
+                        <br>
+                        <input type="radio" id="r2d23" value="r2d23" name="question3">
+                        <label for="r2d23">R2D2</label>
+                        <br>
+                        <input type="radio" id="obiWan3" value="obiWan3" name="question3">
+                        <label for="obiWan3">Obi-Wan Kenobi</label>
+                    </div><br><br>
+                
+                
+                    <div id="question4">
+                        <label>According to Yoda, there are always how many Sith Lords...no more, no less?</label><br>
+                        <input type="radio" id="one4" value="one4" name="question1">
+                        <label for="one4">One (Rule of One)</label>
+                        <br>
+                        <input type="radio" id="none4" value="none4" name="question1">
+                        <label for="none4">None (There are no Sith lords)</label>
+                        <br>
+                        <input type="radio" id="two4" value="two4" name="question1">
+                        <label for="two4">Two (Rule of two)</label>
+                    </div><br><br>
+                
+
+                    <div id="question5">
+                        <label>Who acted as Queen Amidala's decoy?</label><br>
+                        <input type="radio" class ="wrong answer" id="assistant5" value="assistant5" name="question1">
+                        <label for="assistant5">Her assistant, Sabé</label>
+                        <br>
+                        <input type="radio" id="caretaker5" value="caretaker5" name="question1">
+                        <label for="caretaker5">Her caretaker, Sabé</label>
+                        <br>
+                        <input type="radio" id="handmaiden5" value="handmaiden5" name="question1">
+                        <label for="handmaiden5">Her handmaiden, Sabé</label>
+                    </div><br><br>
+                
+
+                    <div id="question6">
+                        <label>Where was Yoda's home in his final years?</label><br>
+                        <input type="radio" id="mustafar6" value="mustafar6" name="question1">
+                        <label for="mustafar6">Mustafar</label>
+                        <br>
+                        <input type="radio" id="dagobah6" value="dagobah6" name="question1">
+                        <label for="dagobah6">Dagobag</label>
+                        <br>
+                        <input type="radio" id="dantooine6" value="dantooine6" name="question1">
+                        <label for="dantooine6">Dantooine</label>
+                    </div><br><br>
+                
+
+                    <div id="question7">
+                        <label>What was Finn's stormtrooper number?</label><br>
+                        <input type="radio" id="fn21877" value="fn21877" name="question1">
+                        <label for="fn21877">FN-2187</label>
+                        <br>
+                        <input type="radio" id="fin7" value="fin7" name="question1">
+                        <label for="fin7">FINr</label>
+                        <br>
+                        <input type="radio" id="fn2181" value="fn2181" name="question1">
+                        <label for="fn2181">FN-2181</label>
+                    </div><br><br>
+                
+
+                    <div id="question8">
+                        <label>Finish the quote: "This is ____"</label><br>
+                        <input type="radio" id="theBegining8" value="theBegining8" name="question1">
+                        <label for="theBegining8">the begining</label>
+                        <br>
+                        <input type="radio" id="fun8" value="fun8" name="question1">
+                        <label for="fun8">Fun</label>
+                        <br>
+                        <input type="radio" id="theWay8" value="theWay8" name="question1">
+                        <label for="theWay8">the way</label>
+                    </div><br><br>
+
+
+                    <div id="question9">
+                        <label>What is Kyle Ren's birth name?</label><br>
+                        <input type="radio" id="benKylo9" value="benKylo9" name="question1">
+                        <label for="benKylo9">Ben Kylo</label>
+                        <br>
+                        <input type="radio" id="kyloRen9" value="kyloRen9" name="question1">
+                        <label for="kyloRen9">Kylo Ren</label>
+                        <br>
+                        <input type="radio" id="benSolo9" value="benSolo9" name="question1">
+                        <label for="benSolo9">Ben Solo</label>
+                    </div><br><br>
+                    <button id="submit">Submit!</button>
+                    
+                </form>
+                <div id="results"></div>
+            </div>
         </div>
         <footer id="rules-box">
             <h2>Rules</h2>
             l. You shall not answer more than 3 questions incorrectly! For each incorrect answer, you will lose a light saber.
             <br>
+            <br>
             ll. Answer as many questions as you can within 30 seconds!
             <br>
+            <br>
             lll. No searching for answers! If you dont know the answer, move on.
+            <br>
             <br>
             lV. Have fun!
         </footer>

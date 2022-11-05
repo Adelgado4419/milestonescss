@@ -1,4 +1,6 @@
+//START TIMER
 const timeH = document.getElementById("countdown")
+const youreFinished = document.getElementById("questionformform")
 let timeSecond = 30;
 
 displayTime(timeSecond)
@@ -19,5 +21,18 @@ function displayTime(second){
 }
 
 function endTime(){
-    timeH.innerHTML = "YOURE FINISHED!"
+    // timeH.innerHTML = "YOURE FINISHED!"//not sure if I want this
+    youreFinished.innerHTML = "YOU HAVE FAILED ME FOR THE LAST TIME"
 }
+// END TIMER
+
+
+//delete lightsaber 
+
+
+if(document.getElementById("question5").value == "assistant5") {
+    
+}
+
+
+//for html form, https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_radio
