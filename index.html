@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <audio >
-        <source src="./assets/themesongfull5min.mp3" type="audio/mpeg" play>
-
+    <audio controls >
+        <source src="./assets/themesongfull5min.mp3" type="audio/mpeg" autoplay>
+        Your browser does not support the audio element.
     </audio>
     <div class="container">
         <header>
@@ -21,7 +21,7 @@
             </div>
             <div id="timerbox">
                 <p id="countdown"></p>
-                <h3>Seconds Remaining!!</h3>
+                <h3 id="secondsRemaining">Seconds Remaining!!</h3>
             </div>
 
         </header>

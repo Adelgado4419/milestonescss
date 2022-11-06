@@ -50,9 +50,11 @@ function finalEval(){
         document.documentElement.scrollTop = 0;
             //visual noticiation of pass or fail
         if (totalCorrect <= 6){
-            document.getElementById("countdown").innerHTML = "You Lost!"
+            document.getElementById("countdown").innerHTML = "You Lost!";
+            document.getElementById("secondsRemaining").innerHTML = "";
         } else {
-            document.getElementById("countdown").innerHTML = "Good job, my apprentice"
+            document.getElementById("countdown").innerHTML = "Good job, my apprentice";
+            document.getElementById("secondsRemaining").innerHTML = "";
             }
     }
     //since this is a function within a function, I have to call the function 
