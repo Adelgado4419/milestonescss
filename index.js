@@ -27,28 +27,34 @@ function endTime(){
 
 //counter eval code
 
-function getTotal(){         
-    var totalCorrect = 0;          
-        for(var a = 1; a <= 9; a++) {
-            var radios = document.getElementsByName('question'+a);
-            for(var x = 0; x < radios.length; x++) {
-        var radio = radios[x];
-        if(radio.value == "correct" && radio.checked) {
-            totalCorrect++;
-        }
+function finalEval(){ 
+    function getTotal(){
+        var totalCorrect = 0;          
+            for(var a = 1; a <= 9; a++) {
+                var radios = document.getElementsByName('question'+a);
+                for(var x = 0; x < radios.length; x++) {
+            var radio = radios[x];
+            if(radio.value == "correct" && radio.checked) {
+                totalCorrect++; }
+                }
+                
+                // const globalTotal = totalCorrect
+            }
+        console.log(totalCorrect)          
+            //displays the total correct in the html form
+        document.getElementById("questionformform").innerHTML = 
+        "Correct Answers:" + totalCorrect + "/9";
+            //stops the counter from counting and causing the text to dispaly "You have failed me for the last time"
+        clearInterval(countDown);
+            //scoll back to the top, before, it would stay at the bottom of the page and not scroll back up
+        document.documentElement.scrollTop = 0;
+            //visual noticiation of pass or fail
+        if (totalCorrect <= 6){
+            document.getElementById("countdown").innerHTML = "You Lost!"
+        } else {
+            document.getElementById("countdown").innerHTML = "Good job, my apprentice"
+            }
     }
-}                   
-    document.getElementById("questionformform").innerHTML = 
-    "Correct Answers:" + totalCorrect + "/9";
-    clearInterval(countDown)
-}
-
-function backToTop(){
-    document.documentElement.scrollTop = 0;
-}
-// function visualNotification() {
-//     if (amountCorrect <=6){
-//     document.getElementById("countdown").innerHTML = "You Lost!"
-// } else {
-//     document.getElementById("countdown").innerHTML = "Good job, my apprentice"
-// }
+    //since this is a function within a function, I have to call the function 
+    getTotal();
+    }
