@@ -6,16 +6,13 @@ body {
   }
   
   * {
-    /* border: 1px solid teal;
-    box-sizing: border-box; */
-    color: white;
+    border: 1px solid teal;
+    box-sizing: border-box;
     font-family: 'Pathway Gothic One', sans-serif;
     color: #feda4a;
     
   }
-  .countdowntimer-seconds{
-    color: white;
-  }
+
   .container{
     display: flex;
     min-height: 100vh;

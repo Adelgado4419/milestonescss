@@ -1,7 +1,7 @@
 //START TIMER
 const timeH = document.getElementById("countdown")
 const youreFinished = document.getElementById("questionformform")
-let timeSecond = 30;
+let timeSecond = 50;
 
 displayTime(timeSecond)
 
@@ -27,122 +27,72 @@ function endTime(){
 // END TIMER
 
 
-//delete lightsaber upon wrong answer
-const lightSaberImg1 = document.getElementById("health1")
+//points keeper
+// function getResults() {
 
-// if(document.getElementById("obiWan1").selected = true) {
-//     lightSaberImg1.remove()
-// }
-
-//online test code
-
-var answers = ["A", "C"],
-  total = answers.length;
-
-
-function getAnswer(QuestionId) {
-  var answer = document.querySelector("#" + QuestionId + " input[type=radio]:checked");
-  if (answer === null) 
-  {
-    document.querySelector("#" + QuestionId + " .choice_error").style.display = "inline";
-  } 
-  else 
-  {
-             
-    document.querySelector("#" + QuestionId + " .choice_error").style.display = "";
-    answer = answer.value;
-  }
-
-  return answer;
-}
-
-
-
-function getScore() 
-{
-  var score = 0;
-
-  for (var i = 0; i < total; i++) 
-  {
-    document.getElementById("flag" + i).innerHTML = "";
-	
-    if (getAnswer("radio" + (i + 1)) == answers[i]) 
-	{
-      score += 1;
-      document.getElementById("flag" + i).innerHTML = "Correct!";
-    }
-
-    else 
-	{
-      document.getElementById("flag" + i).innerHTML = "Incorrect!";
-    }
-  }
+//     //CORRECT ANSWERS
+//     var amountCorrect = 0;
   
- 
-  return score;
-}
+//   // LOOP FOR GOING THROUGH ALL QUESTIONS
+//     for(var i = 1; i <= 5; i++) {
+//       var radioName = document.getElementsByName('question'+i);
+  
+//   //LOOP FOR CHECKING ANSWERS INSIDE EACH RADIO
+//       for(var x = 0; x < radioName.length; x++) {
+//         var radioValue = radioName[j];
+//         if(radioValue.value == "correct" && radioValue.checked) {
+//           amountCorrect+= 1;
+//         }
+//       }
+//     }
+//   document.getElementById('results').innerHTML =
+//   "Correct Answers " + amountCorrect + "/9"; 
+  
+//   }
 
-var getResults = function() 
-{	
-  var x = document.getElementById("myText").value;
-  var message = "";
-  
-  var answerInput1 = document.getElementById("answerText1").value.trim();
-  var answerInput2 = document.getElementById("answerText2").value.trim();
-   
-  var validateInteger = /^\d{2,3}$/;
-  var isValid = true;
-  
-   //score feedback
-   if(getScore() == 0)
-  {
-	  message = "Nothing at all?...Okay, " + x+ ".";
-  }
-  else if(getScore() > 0)
-  {
-	  message = "Cool, but there's still more to answer, " + x + "!";
-  }
-  else if(getScore() == 2)
-  {
-	  message = "Perfect. Thanks for participating, " + x + "!";
-  }
-  
-  //validating input text 1
-  if (answerInput1 == "") 
-  {
-    document.getElementById("answerText1").nextElementSibling.firstChild.nodeValue = "This field is required.";
-    isValid = false;
-  } 
-  else if(answerInput1 != validateInteger)
-  {
-	  document.getElementById("answerText1").nextElementSibling.firstChild.nodeValue = "Answer must be a 2- or 3- digit number";
-	  isValid = false;
-  }
-  else
-  {
-    document.getElementById("answerText1").nextElementSibling.firstChild.nodeValue = "Correct!";
-  }
-  
-  //validating input text 2
-  if (answerInput2 == "") 
-  {
-    document.getElementById("answerText2").nextElementSibling.firstChild.nodeValue = "This field is required.";
-    isValid = false;
-  } 
-  else 
-  {
-    document.getElementById("answerText2").nextElementSibling.firstChild.nodeValue = "Correct!";
-  }
 
-  return message;
-}
+document.getElementById("submit").onclick = function() {myFunction()};
 
-function returnResults() 
-{
-  document.getElementById("results").innerHTML = getResults();
-}
+function myFunction() {
+  document.getElementById("results").innerHTML = "YOU CLICKED ME!";
 
-  
+
+// let points= 0;
+// function results() {
+//     let points= 0;
+//     if (document.getElementById(answer1).checked) {
+//         points+= 1;
+//         console.log(points)}
+//     if (document.getElementById(answer2).checked) {
+//         points+= 1;
+//         console.log(points)}
+//     if (document.getElementById(answer3).checked) {
+//         points+= 1;
+//         console.log(points)}
+//     if (document.getElementById(answer4).checked) {
+//         points+= 1;
+//         console.log(points)}
+//     if (document.getElementById(answer5).checked) {
+//         points+= 1;
+//         console.log(points)}
+//     if (document.getElementById(answer6).checked) {
+//         points+= 1;
+//         console.log(points)}
+//     if (document.getElementById(answer7).checked) {
+//         points+= 1;
+//         console.log(points)}
+//     if (document.getElementById(answer8).checked) {
+//         points+= 1;
+//         console.log(points)}
+//     if (document.getElementById(answer9).checked) {
+//         points+= 1;
+//         console.log(points)}
+//     }
+
+// results()
+
+//Logic to show score on results page
+
 
 // set value of the question, you can create an event listener as well so 
 //that if anakin1 is not selected, a health is removed
