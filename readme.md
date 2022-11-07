@@ -30,6 +30,6 @@ Another feature I would have loved to add was a card stacking feature that would
 ## Previous Projects
 
 In my current job, I work as a programmer, however, I program Savant systems and design Networks. I know firsthand how useful it is to review old projects that I have worked on. When starting this project, the first thing I did was look at old projects and files that I have personally programmed and get them into the same file folder that I was working in. The projects I used to help me start this MileStone project are
-    -CSS-Animations
-    -CSS-The-HackerTimes-Part-1
-    -Media-Queries
+- CSS-Animations
+- CSS-The-HackerTimes-Part-1
+- Media-Queries
