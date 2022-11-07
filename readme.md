@@ -1,44 +1,28 @@
+# Alexis Delgado
+## Star Wars: Mile Stone Project
+## Inspiration:
 
+Hello! And thnak you for taking the time to review and play my game. 
 
+The StarWars trivia game came about due to a school project I was assigned; I had just finishe a Star Wars marathon and this immediately came to mind. 
 
-audio file 1
+## How to Play!
 
-http://soundfxcenter.com/download-sound/star-wars-main-theme-song/
+This game is easy to play. On load, it should ("should!") star playing music automatically. you have 40 seconds to answer as many questions as possible. You must NOT answer more than 3 incorrectly. If you do, You Fail!
 
-auto play
+Make sure to press submit at the end of the page!
 
-https://stackoverflow.com/questions/50490304/how-to-make-audio-autoplay-on-chrome
+## Isuses I faced:
 
-https://www.w3schools.com/tags/att_audio_autoplay.asp
+My biggest issue I faced was building out the timer. I honestly had no clue how involved it would be to create a time. However, being able to build this time and execute it and modify it to meet my needs has help me better understand how almost limitless programming can be. 
 
-https://www.folkstalk.com/2022/09/audio-autoplay-not-working-with-code-examples.html#:~:text=it%20is%20off.-,How%20do%20I%20autoplay%20audio%20in%20HTML%20Chrome%3F,starting%20any%20subsequent%20audio%20file.
+Another issue I faced was creating the autoplay feature for the music. Yes, I did have the "autoplay" tag in programming, but it would not autoplay. It WOULD auto play on my LiveServer, but not when pushed to GitHub. I tried a few different pieces of code (like including an iFrame that StackOverFlow user "ajbee" recommended), but it did not seem to work. 
 
+## Oustanding Bugs:
 
-call funtion on button click
-https://www.tutorialkart.com/javascript/how-to-call-function-on-button-click-in-javascript/#:~:text=JavaScript%20%E2%80%93%20Call%20Function%20on%20Button%20Click&text=Get%20the%20reference%20to%20the,and%20function%20passed%20as%20arguments.
+The current outstanding bug is the autoplay feature. For the life of me, I could not get this working via gitHub pages. It works perfectly in my live server. 
 
+## Features I would like to add:
 
-clear interval 
-https://www.tutorialspoint.com/how-to-stop-a-function-during-its-execution-in-javascript
-
-https://developer.mozilla.org/en-US/docs/Web/API/clearInterval
-
-
-radio count
-https://teamtreehouse.com/community/javascript-project-simple-quiz-with-radio-buttons
-
-
-better understood if else statements within a function
-https://www.codecademy.com/forum_questions/5047e3e81f3f9c000200be3e
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
-
-
-scroll back to top
-https://www.freecodecamp.org/news/back-to-top-button-and-page-progressbar-with-html-css-and-js/
-
-https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-
-
-
-javascript/html/css code beatifier
-https://beautifier.io/
+I really wanted a live health bar that would actively take away a health point (total of 3) for each incorrect answer you received. As time started to run out, I nixed the idea as it wasnt an important feature to impliment at the time.
+Another feature I would have loved to add was a card stacking feature that would pop a new question on top as you answered them, removing the need to scroll down. 

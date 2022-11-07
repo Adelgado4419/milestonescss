@@ -25,6 +25,7 @@ function displayTime(second) {
 
 function endTime() {
     youreFinished.innerHTML = "YOU HAVE FAILED ME FOR THE LAST TIME"
+    document.documentElement.scrollTop = 0;
 }
 //having never created a timer before, i went through alot of youtube videos and tutorial to get this, 
 //i finally landed on the following video, https://www.youtube.com/watch?v=_a4XCarxwr8
@@ -52,6 +53,8 @@ function finalEval() {
         //missing the values in the radio buttons. All this code does it it counts goes through all of the answers via the ID and checks to see if the value is
         //is correct, and if the radio is check, and then it add a point to the totalcorrect counter. 
         //Thank you!!!
+        //another resource i used was https://stackoverflow.com/questions/13935786/quiz-counts-radio-button-values
+        //this was also for the radio buttons an tracking
 
         //displays the total correct in the html form
         document.getElementById("questionformform").innerHTML =
