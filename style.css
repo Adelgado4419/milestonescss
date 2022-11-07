@@ -1,6 +1,6 @@
 
 body {
-    background-image: url("./assets/backgroundimg.jpeg");
+    background-image: url("./Assets/backgroundimg.jpeg");
     background-size: 99%; 
     align-items: center;
   }
@@ -12,9 +12,6 @@ body {
 
   .container{
     display: flex;
-    /* min-height: 100vh; */
-    /* flex-direction: column; */
-    /* max-height: auto; */
   }
   .wrapper {
     display:flex;
@@ -26,10 +23,6 @@ body {
  #questionform, h2, #timerbox{
   background-color: rgba(0, 0, 0, 0.7);
   font-weight: 600;}
-/* //dispaly flex, flex direction colum, 
-either justify content center or align content center, 
-tackle those to single div that contains the form */
-
 
   header,footer, .wrapper {
     flex-grow: 1 ;
@@ -91,17 +84,4 @@ tackle those to single div that contains the form */
       flex-direction: row;
       flex-wrap: wrap;
     }
-    /* .wrapper {
-      justify-content: stretch;
-      flex-basis: 70%;
-        min-height:  80vh; */
-    /* } */
-    /* #rules-box {
-      margin: .5em;
-      flex-grow: 3;
-      min-height:  80vh;
-    } */
-    /* #health {
-        flex-basis: 20%;
-    }   */
   }
