@@ -42,3 +42,7 @@ further reading on functions within a function
 https://stackoverflow.com/questions/7295634/javascript-nested-function
 
 https://bobbyhadz.com/blog/javascript-call-function-inside-function#:~:text=To%20call%20a%20function%20inside%20another%20function%2C%20define%20the%20inner,inside%20of%20the%20outer%20function.&text=Copied!
+
+
+javascript/html/css code beatifier
+https://beautifier.io/
