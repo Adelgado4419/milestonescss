@@ -1,7 +1,7 @@
 //START TIMER CODE!!
 const timeH = document.getElementById("countdown")
 const youreFinished = document.getElementById("questionformform")
-let timeSecond = 50;
+let timeSecond = 40;
 
 displayTime(timeSecond)
 
@@ -29,6 +29,7 @@ function endTime(){
 
 //counter eval code
 function finalEval(){ 
+    //runs through all anwers and verifys if its correct or not
     function getTotal(){
         var totalCorrect = 0;          
             for(var a = 1; a <= 9; a++) {
@@ -39,7 +40,7 @@ function finalEval(){
                 totalCorrect++; }
                 }
             }
-        console.log(totalCorrect)          
+        
             //displays the total correct in the html form
         document.getElementById("questionformform").innerHTML = 
         "Correct Answers:" + totalCorrect + "/9";
@@ -47,7 +48,7 @@ function finalEval(){
         clearInterval(countDown);
             //scoll back to the top, before, it would stay at the bottom of the page and not scroll back up
         document.documentElement.scrollTop = 0;
-            //visual noticiation of pass or fail
+            //visual noticiation of pass or fail, as well as removing the seconds remaining
         if (totalCorrect <= 6){
             document.getElementById("countdown").innerHTML = "You Lost!";
             document.getElementById("secondsRemaining").innerHTML = "";
@@ -59,3 +60,10 @@ function finalEval(){
     //since this is a function within a function, I have to call the function 
     getTotal();
     }
+
+
+//had issues with audio autoplaying, 
+// function audioAutoPlay() {
+//     var audioHTML = document.getElementById("soundTrack").autoplay;
+//   }
+//   audioAutoPlay()
