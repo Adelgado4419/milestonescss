@@ -10,10 +10,16 @@
 </head>
 
 <body>
+    <iframe src="./assets/250-milliseconds-of-silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
 
-    <audio autoplay controls>
+    <!-- i continued to have issues autoplaying the audio track on google chrome, so i found the following link with information
+on how to bypass, which included making an https://stackoverflow.com/questions/50490304/how-to-make-audio-autoplay-on-chrome-->
+    <audio autoplay loop controls>
         <source src="./assets/themesongfull5min.mp3" type="audio/mpeg" autoplay>
         <source src="./assets/themesong2wav.wav" type="audio/wav">
+        <!-- thank you for the audio track!!
+            http://soundfxcenter.com/download-sound/star-wars-main-theme-song/
+        the second track was trimmed and converted on -->
 
         Your browser does not support the audio element.
     </audio>
@@ -113,6 +119,9 @@
                         <label><input type="radio" value="false" name="question9">Kylo Ren</label><br>
                         <label><input type="radio" value="correct" name="question9">Ben Solo</label><br>                    </section><br><br>
                     <button id="submit" type="button" onclick="finalEval();">Submit!</button>
+                    call funtion on button click
+<!-- this site assisted with teaching me how to call a function on a button click! 
+    https://www.tutorialkart.com/javascript/how-to-call-function-on-button-click-in-javascript/#:~:text=JavaScript%20%E2%80%93%20Call%20Function%20on%20Button%20Click&text=Get%20the%20reference%20to%20the,and%20function%20passed%20as%20arguments. -->
                 </fieldset>
                 </form>
                 <p id="results"></p>
