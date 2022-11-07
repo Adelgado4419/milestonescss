@@ -26,3 +26,10 @@ The current outstanding bug is the autoplay feature. For the life of me, I could
 
 I really wanted a live health bar that would actively take away a health point (total of 3) for each incorrect answer you received. As time started to run out, I nixed the idea as it wasnt an important feature to impliment at the time.
 Another feature I would have loved to add was a card stacking feature that would pop a new question on top as you answered them, removing the need to scroll down. 
+
+## Previous Projects
+
+In my current job, I work as a programmer, however, I program Savant systems and design Networks. I know firsthand how useful it is to review old projects that I have worked on. When starting this project, the first thing I did was look at old projects and files that I have personally programmed and get them into the same file folder that I was working in. The projects I used to help me start this MileStone project are
+    -CSS-Animations
+    -CSS-The-HackerTimes-Part-1
+    -Media-Queries
