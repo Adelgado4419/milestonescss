@@ -25,8 +25,9 @@ function endTime(){
 }
 // END TIMER
 
-//counter eval code
+//setting value for audio to stop
 
+//counter eval code
 function finalEval(){ 
     function getTotal(){
         var totalCorrect = 0;          
@@ -37,8 +38,6 @@ function finalEval(){
             if(radio.value == "correct" && radio.checked) {
                 totalCorrect++; }
                 }
-                
-                // const globalTotal = totalCorrect
             }
         console.log(totalCorrect)          
             //displays the total correct in the html form
