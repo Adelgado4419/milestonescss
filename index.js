@@ -82,3 +82,7 @@ function finalEval() {
     //helped me better grasp function within a function. Initially, I had 3 seperate functions, an my onclick on my HTML was
     //calling all three seperate functions, but after reviewing this, I nested the getTotal function inside of a new function, finalEval, and even added an if/else
     //inside. 
+
+
+    //furthermore to assist with the possibility of plagarism, I followed this guideline of commenting code
+    //https://www.turnitin.com/blog/plagiarism-and-programming-how-to-code-without-plagiarizing-2
