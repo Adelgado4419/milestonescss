@@ -1,0 +1,92 @@
+* {
+  font-family: "Pathway Gothic One", sans-serif;
+  color: #feda4a;
+}
+
+.container {
+  display: flex;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 1600px;
+  padding-left: 100px;
+  flex-grow: 1;
+  margin: 0.5em;
+  max-height: 10vh;
+}
+
+#questionform {
+  background-color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+}
+
+#timerbox {
+  background-color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+  position: fixed;
+}
+
+body {
+  background-image: url("./assets/backgroundimg.jpeg");
+  background-size: 99%;
+  align-items: center;
+}
+body h2 {
+  background-color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+  max-width: 25em;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  text-align: justify;
+  text-align: center;
+}
+body header {
+  flex-grow: 1;
+  margin: 0.5em;
+  max-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  min-height: 20vh;
+}
+body header > div {
+  flex-grow: 10;
+  margin: 0.5em;
+}
+body footer {
+  flex-grow: 1;
+  margin: 0.5em;
+  max-height: 10vh;
+  max-width: 25em;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  text-align: justify;
+  padding-right: 3em;
+  min-height: 450px;
+  padding-left: 2em;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#logoImg {
+  max-height: 100%;
+  padding-left: 25%;
+}
+
+#submit {
+  color: black;
+  position: sticky;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
